@@ -7,35 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB10C01A24ADEDAA0059E4DF /* PaymentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB10C01824ADEDAA0059E4DF /* PaymentCollectionViewCell.swift */; };
-		FB10C01B24ADEDAA0059E4DF /* PaymentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB10C01924ADEDAA0059E4DF /* PaymentCollectionViewCell.xib */; };
+		FB10C01B24ADEDAA0059E4DF /* OrderHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB10C01924ADEDAA0059E4DF /* OrderHeaderView.xib */; };
 		FB10C01D24ADEFD10059E4DF /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = FB10C01C24ADEFD10059E4DF /* fonts */; };
-		FB10C01F24ADF7990059E4DF /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB10C01E24ADF7990059E4DF /* PaymentView.swift */; };
-		FB10C02124ADF7AB0059E4DF /* PaymentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB10C02024ADF7AB0059E4DF /* PaymentView.xib */; };
+		FB10C01F24ADF7990059E4DF /* PaymentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB10C01E24ADF7990059E4DF /* PaymentCollectionViewCell.swift */; };
+		FB10C02124ADF7AB0059E4DF /* PaymentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB10C02024ADF7AB0059E4DF /* PaymentCollectionViewCell.xib */; };
 		FB6D168A24ADE6990078F8B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6D168924ADE6990078F8B5 /* AppDelegate.swift */; };
 		FB6D168C24ADE6990078F8B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6D168B24ADE6990078F8B5 /* SceneDelegate.swift */; };
-		FB6D168E24ADE6990078F8B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6D168D24ADE6990078F8B5 /* ViewController.swift */; };
+		FB6D168E24ADE6990078F8B5 /* OrderCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6D168D24ADE6990078F8B5 /* OrderCollectionViewController.swift */; };
 		FB6D169124ADE6990078F8B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6D168F24ADE6990078F8B5 /* Main.storyboard */; };
 		FB6D169324ADE69E0078F8B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB6D169224ADE69E0078F8B5 /* Assets.xcassets */; };
 		FB6D169624ADE69E0078F8B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6D169424ADE69E0078F8B5 /* LaunchScreen.storyboard */; };
 		FB6D169E24ADE76A0078F8B5 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6D169D24ADE76A0078F8B5 /* Order.swift */; };
+		FBE98E9524B30149005985D5 /* OrderHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE98E9424B30149005985D5 /* OrderHeaderView.swift */; };
+		FBE98E9724B30167005985D5 /* OrderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE98E9624B30167005985D5 /* OrderFooterView.swift */; };
+		FBE98E9924B3018A005985D5 /* OrderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE98E9824B3018A005985D5 /* OrderFooterView.xib */; };
+		FBE98E9E24B34074005985D5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE98E9D24B34074005985D5 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB10C01824ADEDAA0059E4DF /* PaymentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCollectionViewCell.swift; sourceTree = "<group>"; };
-		FB10C01924ADEDAA0059E4DF /* PaymentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentCollectionViewCell.xib; sourceTree = "<group>"; };
+		FB10C01924ADEDAA0059E4DF /* OrderHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderHeaderView.xib; sourceTree = "<group>"; };
 		FB10C01C24ADEFD10059E4DF /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
-		FB10C01E24ADF7990059E4DF /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
-		FB10C02024ADF7AB0059E4DF /* PaymentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentView.xib; sourceTree = "<group>"; };
+		FB10C01E24ADF7990059E4DF /* PaymentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB10C02024ADF7AB0059E4DF /* PaymentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentCollectionViewCell.xib; sourceTree = "<group>"; };
 		FB6D168624ADE6990078F8B5 /* Silverman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Silverman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6D168924ADE6990078F8B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB6D168B24ADE6990078F8B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB6D168D24ADE6990078F8B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB6D168D24ADE6990078F8B5 /* OrderCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCollectionViewController.swift; sourceTree = "<group>"; };
 		FB6D169024ADE6990078F8B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB6D169224ADE69E0078F8B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB6D169524ADE69E0078F8B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB6D169724ADE69E0078F8B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB6D169D24ADE76A0078F8B5 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		FBE98E9424B30149005985D5 /* OrderHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHeaderView.swift; sourceTree = "<group>"; };
+		FBE98E9624B30167005985D5 /* OrderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFooterView.swift; sourceTree = "<group>"; };
+		FBE98E9824B3018A005985D5 /* OrderFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderFooterView.xib; sourceTree = "<group>"; };
+		FBE98E9D24B34074005985D5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,31 +72,22 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		FB10C02524AE29E10059E4DF /* Views */ = {
+		FB10C02524AE29E10059E4DF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FB6D168D24ADE6990078F8B5 /* ViewController.swift */,
-				FB10C02624AE2A050059E4DF /* PaymentCollectionView */,
+				FB6D168D24ADE6990078F8B5 /* OrderCollectionViewController.swift */,
 			);
-			path = Views;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		FB10C02624AE2A050059E4DF /* PaymentCollectionView */ = {
+		FB10C02624AE2A050059E4DF /* OrderCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				FB10C01E24ADF7990059E4DF /* PaymentView.swift */,
-				FB10C02024ADF7AB0059E4DF /* PaymentView.xib */,
-				FB10C01824ADEDAA0059E4DF /* PaymentCollectionViewCell.swift */,
-				FB10C01924ADEDAA0059E4DF /* PaymentCollectionViewCell.xib */,
+				FBE98E9C24B30212005985D5 /* Header */,
+				FBE98E9A24B301B1005985D5 /* Cell */,
+				FBE98E9B24B3020A005985D5 /* Footer */,
 			);
-			path = PaymentCollectionView;
-			sourceTree = "<group>";
-		};
-		FB10C02724AE2A350059E4DF /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenters;
+			path = OrderCollectionView;
 			sourceTree = "<group>";
 		};
 		FB6D167D24ADE6990078F8B5 = {
@@ -112,17 +109,53 @@
 		FB6D168824ADE6990078F8B5 /* Silverman */ = {
 			isa = PBXGroup;
 			children = (
+				FBE98E9D24B34074005985D5 /* Colors.swift */,
 				FB6D168924ADE6990078F8B5 /* AppDelegate.swift */,
 				FB6D168B24ADE6990078F8B5 /* SceneDelegate.swift */,
 				FB10C02224AE29B10059E4DF /* Models */,
 				FB10C02424AE29D10059E4DF /* Scenes */,
-				FB10C02724AE2A350059E4DF /* Presenters */,
-				FB10C02524AE29E10059E4DF /* Views */,
+				FBE98E9F24B34A0A005985D5 /* Views */,
+				FB10C02524AE29E10059E4DF /* Controllers */,
 				FB6D169224ADE69E0078F8B5 /* Assets.xcassets */,
 				FB10C01C24ADEFD10059E4DF /* fonts */,
 				FB6D169724ADE69E0078F8B5 /* Info.plist */,
 			);
 			path = Silverman;
+			sourceTree = "<group>";
+		};
+		FBE98E9A24B301B1005985D5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FB10C01E24ADF7990059E4DF /* PaymentCollectionViewCell.swift */,
+				FB10C02024ADF7AB0059E4DF /* PaymentCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FBE98E9B24B3020A005985D5 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				FBE98E9624B30167005985D5 /* OrderFooterView.swift */,
+				FBE98E9824B3018A005985D5 /* OrderFooterView.xib */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		FBE98E9C24B30212005985D5 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				FBE98E9424B30149005985D5 /* OrderHeaderView.swift */,
+				FB10C01924ADEDAA0059E4DF /* OrderHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		FBE98E9F24B34A0A005985D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB10C02624AE2A050059E4DF /* OrderCollectionView */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +218,10 @@
 				FB6D169624ADE69E0078F8B5 /* LaunchScreen.storyboard in Resources */,
 				FB10C01D24ADEFD10059E4DF /* fonts in Resources */,
 				FB6D169324ADE69E0078F8B5 /* Assets.xcassets in Resources */,
-				FB10C02124ADF7AB0059E4DF /* PaymentView.xib in Resources */,
+				FB10C02124ADF7AB0059E4DF /* PaymentCollectionViewCell.xib in Resources */,
 				FB6D169124ADE6990078F8B5 /* Main.storyboard in Resources */,
-				FB10C01B24ADEDAA0059E4DF /* PaymentCollectionViewCell.xib in Resources */,
+				FB10C01B24ADEDAA0059E4DF /* OrderHeaderView.xib in Resources */,
+				FBE98E9924B3018A005985D5 /* OrderFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,10 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB6D168E24ADE6990078F8B5 /* ViewController.swift in Sources */,
-				FB10C01F24ADF7990059E4DF /* PaymentView.swift in Sources */,
+				FBE98E9724B30167005985D5 /* OrderFooterView.swift in Sources */,
+				FBE98E9E24B34074005985D5 /* Colors.swift in Sources */,
+				FBE98E9524B30149005985D5 /* OrderHeaderView.swift in Sources */,
+				FB6D168E24ADE6990078F8B5 /* OrderCollectionViewController.swift in Sources */,
+				FB10C01F24ADF7990059E4DF /* PaymentCollectionViewCell.swift in Sources */,
 				FB6D169E24ADE76A0078F8B5 /* Order.swift in Sources */,
-				FB10C01A24ADEDAA0059E4DF /* PaymentCollectionViewCell.swift in Sources */,
 				FB6D168A24ADE6990078F8B5 /* AppDelegate.swift in Sources */,
 				FB6D168C24ADE6990078F8B5 /* SceneDelegate.swift in Sources */,
 			);

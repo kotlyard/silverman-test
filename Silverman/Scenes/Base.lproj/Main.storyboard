@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="85X-Re-ZNO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,39 +7,78 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="TAs-tC-pAv">
+            <objects>
+                <navigationController id="85X-Re-ZNO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sIe-yy-tzr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="q1C-AB-AMS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVM-Vd-Ig6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-593" y="130"/>
+        </scene>
+        <!--Список оплат-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Silverman" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OrderCollectionViewController" customModule="Silverman" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Han-kx-Ghm">
-                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SiQ-BM-z4w">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="YLN-6U-P0m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Han-kx-Ghm">
+                                <rect key="frame" x="30" y="103" width="354" height="793"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="2" minimumInteritemSpacing="2" id="1i0-X0-7HB">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Tx7-sb-HFp"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="99o-CW-YOS"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Han-kx-Ghm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="9pi-h2-k5Z"/>
-                            <constraint firstItem="Han-kx-Ghm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NQU-oE-HTx"/>
-                            <constraint firstItem="Han-kx-Ghm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Wq5-Ri-Gy9"/>
-                            <constraint firstItem="Han-kx-Ghm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ZSy-IC-SaM"/>
+                            <constraint firstItem="Han-kx-Ghm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="82u-DE-dMf"/>
+                            <constraint firstItem="Han-kx-Ghm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-30" id="Gvj-6S-qZB"/>
+                            <constraint firstAttribute="bottom" secondItem="YLN-6U-P0m" secondAttribute="bottom" id="VwH-fv-Frd"/>
+                            <constraint firstItem="YLN-6U-P0m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hgt-az-nee"/>
+                            <constraint firstItem="Han-kx-Ghm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="iSV-Ed-u04"/>
+                            <constraint firstItem="YLN-6U-P0m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mWE-MA-1mL"/>
+                            <constraint firstAttribute="bottom" secondItem="Han-kx-Ghm" secondAttribute="bottom" id="stH-4Q-3WZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YLN-6U-P0m" secondAttribute="trailing" id="vHj-Ji-EfI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Список оплат" id="nbf-hE-1bK">
+                        <barButtonItem key="leftBarButtonItem" image="arrow" style="done" id="XWH-Ih-r9R">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collection" destination="Han-kx-Ghm" id="F8i-G1-XeC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="130"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow" width="24" height="16"/>
+        <image name="bg" width="383" height="806"/>
+    </resources>
 </document>
